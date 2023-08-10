@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <%@include file="../inc/top.jsp"%>
+
 <html lang="ko">
 <head>
 <meta charset="utf-8">
@@ -42,8 +43,6 @@
 <link href="/ezBears/css/style.css" rel="stylesheet">
 <script type="text/javascript" src="/ezBears/js/jquery-3.7.0.min.js"></script>
 
-<!-- 개인 css -->
-<link href="/ezBears/css/yeji.css" rel="stylesheet">
 </head> 
 	<!-- header -->
 	<div id="contents" class="content01">

@@ -49,24 +49,24 @@
 					        	<div>
 						        	<div class="list_box_title">
 						        		<div class="user_img">
-						        			<img src="<c:url value='/img/user.jpg'/>" alt="사원프로필">
+						        			<img src="<c:url value='/img/leejunho.jpg'/>" alt="사원프로필">
 						        		</div>
 						        		<div class="user_txt">
-						        			<span class="user_txt_name">제이든</span>
-						        			<span class="user_txt_time"> &#183 오늘 오후 3:45</span>
+						        			<span class="user_txt_name">이준호</span>
+						        			<span class="user_txt_time"> &#183 오늘 오후 5:21</span>
 						        		</div>
-						        		<div class="user_dept">개발1팀</div>
+						        		<div class="user_dept">경영지원팀</div>
 						        	</div>
 						       		<div class="list_box_content">
 						       			<div class="content_title">공지사항 전달드립니다</div>
 						       			<div class="content_txt">
-						       			인사팀에서 법정 의무 교육을 한다고 합니다 :)<br>
-						       			올해 입사한 신입사원분들을 포함해 모든 직원분들이 수강해주셔야 합니다.<br>
-						       			자세한 수강방법 안내는 아래 내용을 확인해주세요.
+						       			안녕하세요 경영지원팀 이준호입니다<br>
+						       			테스트 작업차 공지사항 수정했습니다<br>
+						       			감사합니다
 						       			</div>
 						       		</div>
 						       		
-						       		<div class="list_box_file">config.zip 300.42MB</div>
+						       		<div class="list_box_file">test.zip 300.42MB</div>
 					       		</div>
 					       		<div class="notice_reply">
 					       			<div><a href="<c:url value='/myBoard/teamNoticeDetail'/>">댓글 달기</a></div>
@@ -83,7 +83,7 @@
 						        			<span class="user_txt_name">박진수</span>
 						        			<span class="user_txt_time"> &#183 2023-07-31 오전 10:28</span>
 						        		</div>
-						        		<div class="user_dept">개발1팀</div>
+						        		<div class="user_dept">경영지원팀</div>
 						        	</div>
 						       		<div class="list_box_content">
 						       			<div class="content_title">회식관련 공지 드립니다.</div>
@@ -108,7 +108,7 @@
 						        			<span class="user_txt_name">어피치 (apeach)</span>
 						        			<span class="user_txt_time"> &#183 오늘 오후 3:45</span>
 						        		</div>
-						        		<div class="user_dept">개발1팀</div>
+						        		<div class="user_dept">경영지원팀</div>
 						        	</div>
 						       		<div class="list_box_content">
 						       			<div class="content_title">안녕하세요. 인사팀 어피치 입니다.</div>

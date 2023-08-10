@@ -3,7 +3,7 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.ez.ezBears.myBoard.model.MyBoardListDAO">
-	<select id="selectBoardList" parameterType="int" resultType="myBoardListVO">
+	<select id="selectBoardList" parameterType="int" resultType="map">
 		SELECT n.M_BOARD_NAME, n.M_BOARD_NO 
 		FROM MY_BOARD m
 		join M_BOARD n
@@ -11,3 +11,5 @@
 		WHERE m.MEM_NO=#{memNo}
 	</select>
 </mapper>
+
+

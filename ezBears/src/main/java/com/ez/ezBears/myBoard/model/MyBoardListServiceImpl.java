@@ -1,6 +1,8 @@
+
 package com.ez.ezBears.myBoard.model;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
@@ -16,3 +18,4 @@ public class MyBoardListServiceImpl implements MyBoardListService {
 	}
 
 }
+

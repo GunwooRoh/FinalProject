@@ -1,6 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@include file="../inc/top.jsp"%>	
 <!-- Recent Sales Start -->
+	<!-- 클래식 에디터 -->
+<script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+	<!-- 넓이 높이 조절 -->
+	<style>
+	.ck.ck-editor {
+    	max-width: 100%;
+	}
+	.ck-editor__editable {
+	    min-height: 500px;
+	    background: #000;
+	}
+	
+	</style>
+
 <div class="container-fluid pt-4 px-4" id="board_style">
 	<div class="bg-secondary text-center rounded p-4">
     	<div class="bg-secondary rounded h-100 p-4">
@@ -23,9 +37,26 @@
 		       				 
 		       		<div class="write_content">
 		       			<div class="write_view">
-			       			 <div class="form-floating">
+		       			   <div id="editor">
+						   
+						    </div>
+						    <script>
+							    ClassicEditor
+								.create(document.querySelector('#editor'), {
+									ckfinder: {
+										uploadUrl : '/image/upload'
+									}
+								})
+								.then(editor => {
+									console.log('Editor was initialized');
+								})
+								.catch(error => {
+									console.error(error);
+								});
+						    </script>
+			       			 <!-- <div class="form-floating">
 							  <textarea class="form-control write_form" placeholder="내용을 입력해주세요" id="#"></textarea>
-							</div>	
+							</div>	 -->
 		       			</div>
 		       			
 		       			<div class="write_file">
@@ -43,4 +74,5 @@
 		</div>
 	</div>
 </div>
+
 <%@include file="../inc/bottom.jsp"%>  

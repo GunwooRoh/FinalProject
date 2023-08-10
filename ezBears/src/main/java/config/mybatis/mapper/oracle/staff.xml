@@ -5,14 +5,14 @@
 <mapper namespace="com.ez.ezBears.staff.model.StaffDAO">
 	<select id="selectCheckId" parameterType="string"
 		resultType="int">
-		select count(*) from STAFF  
-		where STAFF_ID=#{STAFF_ID}
+		select count(*) from staff  
+		where staffId=#{staffId}
 	</select>
 	
 	<select id="selectPwd" parameterType="string"
 		resultType="string">
-		select STAFF_PWD  from STAFF 
-		where STAFF_ID=#{STAFF_ID}
-		and CONTRACT_DONE is null
+		select staffPwd  from staff 
+		where staffId=#{staffId}
+		and contractDone is null
 	</select>
 </mapper>

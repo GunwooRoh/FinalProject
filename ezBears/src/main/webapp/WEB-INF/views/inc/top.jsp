@@ -96,16 +96,23 @@
                 <!-- 사원정보 -->
                <div id="top_membox">
 	                <div class="d-flex user_info">
-	                    <div class="position-relative">
+	                	<!-- 로그인 안했을 시 -->
+	                	<c:if test="${empty sessionScope.userid }">
+							<input type="submit" class="btn btn-primary py-3 w-100 mb-4" id="lg_submit" value="로그인">
+						</c:if>
+	                	<!-- 로그인했을 시 -->
+	                	<c:if test="${!empty sessionScope.userid }">
+	                	<div class="position-relative">
 	                        <img class="member_img" src="<c:url value='/img/user.jpg'/>" alt="프로필 이미지">
 	                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
 	                    </div>
 	                    <div class="ms-3 lign-items-center">
 	                        <h6 class="mb-0">김민석/대리</h6>
 	                        <span>💼운영1팀</span>
+			               	<button class="inoutBtn">출근</button>
 	                    </div>
+						</c:if>
 	                </div>
-	               	<button class="inoutBtn">출근</button>
                 </div>
                 <!-- 사원정보 끝-->
 

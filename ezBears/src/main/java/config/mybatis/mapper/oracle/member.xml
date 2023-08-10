@@ -5,12 +5,12 @@
 <mapper namespace="com.ez.ezBears.member.model.MemberDAO">
 	<select id="selectCheckId" parameterType="string" resultType="int">
 		select count(*) from member 
-		where MEM_ID =#{memId}
+		where memId=#{memId}
 	</select>
 	
 	<select id="selectPwd" parameterType="string" resultType="string">
-		select MEM_PWD  from member
-		where MEM_ID =#{memId}
-		and CONTRACT_DONE  is null
+		select memPwd from member
+		where memId=#{memId}
+		and contractDone is null
 	</select>
 </mapper>

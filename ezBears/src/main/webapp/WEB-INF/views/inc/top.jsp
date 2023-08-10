@@ -98,7 +98,7 @@
 	                <div class="d-flex user_info">
 	                	<!-- 로그인 안했을 시 -->
 	                	<c:if test="${empty sessionScope.userid }">
-							<input type="submit" class="btn btn-primary py-3 w-100 mb-4" id="lg_submit" value="로그인">
+							<a href="<c:url value='/login/login'/>">로그인</a></li>
 						</c:if>
 	                	<!-- 로그인했을 시 -->
 	                	<c:if test="${!empty sessionScope.userid }">

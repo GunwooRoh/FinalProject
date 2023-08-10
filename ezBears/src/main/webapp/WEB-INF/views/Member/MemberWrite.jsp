@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@include file="../inc/top.jsp"%>
 <link href="${pageContext.request.contextPath}/css/Dcss.css" rel="stylesheet">
+
 <div class="col-12">
 	<div class="bg-secondary rounded h-100 p-4">
 	<h6 class="mb-4">사원 등록</h6>

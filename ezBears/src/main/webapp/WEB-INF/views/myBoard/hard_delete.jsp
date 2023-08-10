@@ -22,7 +22,7 @@
                                 <div class="row mb-3">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">비밀번호</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control pwd" >
+                                        <input type="text" class="form-control" class="pwd">
                                     </div>
                                 </div>
                                 </form>

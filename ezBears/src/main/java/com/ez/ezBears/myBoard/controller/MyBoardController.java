@@ -11,36 +11,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/myBoard")
 public class MyBoardController {
 	private static final Logger logger = LoggerFactory.getLogger(MyBoardController.class);
-	
-	@RequestMapping("/board")
-	public String board() {
-		//1,4
-		logger.info("마이보드 보여주기");
-		return "myBoard/board";
-	}
 
 	//예지
-	
-	@RequestMapping("/teamNoticeList")
-	public String teamNoticeList() {
-		//1
+	/*팀별 공지사항 게시판 */
+	@RequestMapping("/teamNotice")
+	public String teamNotice() {
 		logger.info("팀 공지사항 리스트 페이지");
-		//2
-		//3
-		//4
 		return "myBoard/teamNoticeList";
 	}
 	
 	@RequestMapping("/teamNoticeDetail")
 	public String teamBoardDetil(/* @RequestParam (defaultValue = "0")int no */) {
-		//1
 		logger.info("팀 공지사항 디테일 페이지 파라미터 no={}");
-		//2
-		//3
-		//4
 		return "myBoard/teamNoticeDetail";
 	}
-	
 	
 	
 	@RequestMapping("/teamNoticeWrite")
@@ -48,6 +32,15 @@ public class MyBoardController {
 		logger.info("팀 공지사항 등록하기 페이지");
 		return "myBoard/teamNoticeWrite";
 	}
+	
+
+	/*팀별 업무 게시판 */
+	@RequestMapping("/teamWorkBoard")
+	public String teamWorkBoard() {
+		logger.info("팀 업무 게시판 리스트 페이지");
+		return "myBoard/teamWorkBoardList";
+	}
+	
 	
 	@RequestMapping("/teamWorkBoardWrite")
 	public String teamWorkBoardWrite() {
@@ -61,14 +54,15 @@ public class MyBoardController {
 		return "myBoard/teamWorkBoardDetail";
 	}
 	
-
-	
-	
-	
-	
-	
 	
 	//희진
+	/*팀별 결재 게시판 */
+
+	@RequestMapping("/Approval")
+	public String Approval() {
+		logger.info("결재 리스트");
+		return "myBoard/Approval";
+	}
 	
 	@RequestMapping("/Approval_wr")
 	public String Approval_wr() {
@@ -82,16 +76,6 @@ public class MyBoardController {
 		return "myBoard/Approval_detail";
 	}
 	
-	@RequestMapping("/hard_detail")
-	public String hard_detail() {
-		logger.info("웹하드 디테일");
-		return "myBoard/hard_detail";
-	}
-	@RequestMapping("/hard_delete")
-	public String hard_delete() {
-		logger.info("웹하드 삭제");
-		return "myBoard/hard_delete";
-	}
 	@RequestMapping("/Approval_delete")
 	public String Approval_delete() {
 		logger.info("결재하드 삭제");
@@ -99,6 +83,32 @@ public class MyBoardController {
 	}
 	
 	
+	/*팀별 웹하드 게시판 */
+	@RequestMapping("/webhard")
+	public String hard() {
+		logger.info("웹하드 리스트");
+		return "myBoard/webhard";
+	}	
+	
+	@RequestMapping("/webhard_detail")
+	public String hard_detail() {
+		logger.info("웹하드 디테일");
+		return "myBoard/webhard_detail";
+	}
+	@RequestMapping("/webhard_delete")
+	public String hard_delete() {
+		logger.info("웹하드 삭제");
+		return "myBoard/webhard_delete";
+	}
+	
+   /* 캘린더 */
+   @RequestMapping("/Calender")
+   public String Calender() {
+      logger.info("결재 리스트");
+      return "myBoard/Calender";
+   }	
+
+
 
 }
 

@@ -42,6 +42,10 @@
 		                </tr>
 		            </tbody>
 		        </table>
+		        
+				<div class="divBtn">
+				    <a href="<c:url value='/staff/staffWrite'/>">스태프 등록</a>
+				</div>
 		    </div>
 		</div>
 	</div>
